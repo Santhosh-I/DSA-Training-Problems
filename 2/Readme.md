@@ -1,0 +1,1 @@
+Write a program to find a first greatest element and second greatest element. Without in-built function.
