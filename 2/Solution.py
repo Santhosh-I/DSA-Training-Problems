@@ -1,5 +1,9 @@
 array = list(map(int,input("Enter array:").split()))
 
-print("First Largest :",max(array),"Index :",array.index(max(array))+1)
-array.remove(max(array))
-print("Second Largest :",max(array),"Index :",array.index(max(array))+1)
+for i in range(len(array)):
+    for j in range(i+1,len(array)):
+        if array[i] < array[j]:
+            max = j
+            print(array[j])
+
+print(array[j])
