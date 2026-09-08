@@ -1,0 +1,1 @@
+Give an marker that 0 represents absent and 1 represent present . find the total no of absentees for the the given day.
