@@ -12,5 +12,12 @@ for i in range(Test_case):
         print(count,"Student absent")
         
         
+# With Built in function:
+Test_case = int(input())
 
-
+for i in range(Test_case):
+    array = list(map(int,input().split()))
+    if sum(array) == len(array):
+        print("No abdentees")
+    else:
+        print(len(array)-sum(array),"Students Absent")
