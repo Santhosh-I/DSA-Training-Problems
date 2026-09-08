@@ -1,3 +1,5 @@
+# Without Built in function:
+
 Test_case = int(input())
 
 for i in range(Test_case):
@@ -21,3 +23,18 @@ for i in range(Test_case):
         print("No abdentees")
     else:
         print(len(array)-sum(array),"Students Absent")
+
+
+# With Count function:
+
+Test_case = int(input())
+
+for i in range(Test_case):
+    array = list(map(int,input().split()))
+    if array.count(0) == 0:
+        print("No absentees")
+    else:
+        print(array.count(0),"Student Absent")
+
+        
+
