@@ -1,9 +1,5 @@
 array = list(map(int,input("Enter array:").split()))
+array = sorted(array)
 
-for i in range(len(array)):
-    for j in range(i+1,len(array)):
-        if array[i] < array[j]:
-            max = j
-            print(array[j])
-
-print(array[j])
+print("First Largest Element:",array[-1])
+print("Second Largest Element:",array[-2])
