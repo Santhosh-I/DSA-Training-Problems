@@ -1,4 +1,6 @@
-nums = [1,3,5,6]
-target = int(input())
+s = [1,2,3]
 
-print(nums.index(target))
+arr = "".join(map(str,s))
+a = int(arr)
+res = a + 1
+print(list(str(res)))
