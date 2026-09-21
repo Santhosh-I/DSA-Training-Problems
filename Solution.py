@@ -1,13 +1,7 @@
-nums = [4,3,2,7,8,2,3,1]
+nums = [0,1,2,2,3,0,4,2]
+val = 2
+for i in range(len(nums)):
+    if val in nums:
+        nums.remove(val)
 
-freq = {}
-res = []
-
-for i in nums:
-    freq[i] = freq.get(i,0) + 1
-
-for i in nums:
-    if freq[i] > 1 and i not in res:
-        res.append(i)
-
-print(res)
+print(len(nums))
