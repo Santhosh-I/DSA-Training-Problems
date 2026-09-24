@@ -1,7 +1,9 @@
-nums = [0,1,2,2,3,0,4,2]
-val = 2
-for i in range(len(nums)):
-    if val in nums:
-        nums.remove(val)
+arr = [100,200,150,300,250]
+sum = 0
+sum_arr = []
 
-print(len(nums))
+for i in range(len(arr)):
+    sum += arr[i]
+    sum_arr.append(sum)
+
+print(sum_arr)
