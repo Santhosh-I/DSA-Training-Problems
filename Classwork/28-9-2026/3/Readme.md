@@ -1,0 +1,1 @@
+## count the no of vowels , consonents in the givin string . the string will contains only alphabet with both uppercase and lowercase.

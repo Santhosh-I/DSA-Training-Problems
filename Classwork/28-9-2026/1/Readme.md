@@ -1,0 +1,1 @@
+## get a input string from a user and print the index along with character.
