@@ -1,21 +1,12 @@
-# arr = "abbaca"
-# final = [arr[0]]
+arr = [1, 2, 4, 5]
 
-# for i in range(len(arr)-1):
-#     if arr[i] != arr[i+1]:
-#         final.append(arr[i+1])
-#     else:
-#         final.pop()
+n = 5
 
-# print(final)
+expected = n * (n + 1) // 2
 
+actual = 0
 
-# arr = [int(x) for x in input().split()]
-# print(arr)
+for x in arr:
+    actual += x
 
-n = int(input())
-arr = []
-
-for i in range(n):
-    arr.append(input())
-print(arr)
+print(expected - actual)
