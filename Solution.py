@@ -1,12 +1,19 @@
-arr = [1, 2, 4, 5]
+class Solution:
+    def containsNearbyDuplicate(nums,k):
 
-n = 5
+        start = 0
+        end = k
 
-expected = n * (n + 1) // 2
+        while end < len(nums) + 1:
+            if len(nums[start:k+1]) != len(set(nums[start:k+1])):
+                return True
+                break
+            
+            start += 1
+            end +=1
 
-actual = 0
+        else:
+            return False
 
-for x in arr:
-    actual += x
-
-print(expected - actual)
+print(Solution.containsNearbyDuplicate([1,0,1,1], 1))
+                
