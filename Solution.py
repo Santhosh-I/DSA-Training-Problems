@@ -5,7 +5,7 @@ class Solution:
         end = k
 
         while end < len(nums) + 1:
-            if len(nums[start:k+1]) != len(set(nums[start:k+1])):
+            if len(nums[start:end+1]) != len(set(nums[start:end+1])):
                 return True
                 break
             
