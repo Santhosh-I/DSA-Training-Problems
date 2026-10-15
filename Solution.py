@@ -1,19 +1,12 @@
-class Solution:
-    def containsNearbyDuplicate(nums,k):
+import matplotlib.pyplot as plt
 
-        start = 0
-        end = k
+midpoints = [25, 35, 45, 55]
+frequency = [4, 9, 12, 5]
 
-        while end < len(nums) + 1:
-            if len(nums[start:end+1]) != len(set(nums[start:end+1])):
-                return True
-                break
-            
-            start += 1
-            end +=1
+plt.plot(midpoints, frequency, marker="o")
 
-        else:
-            return False
-
-print(Solution.containsNearbyDuplicate([1,0,1,1], 1))
-                
+plt.xlabel("Age Midpoint")
+plt.ylabel("Frequency")
+plt.title("Frequency Polygon of Employee Ages")
+plt.grid(True)
+plt.show()
